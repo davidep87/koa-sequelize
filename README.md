@@ -1,4 +1,3 @@
-### Author: Davide Polano
 #### Node.JS (7.7.1) - KoaJS (2.3) - Sequelize 4.2
 
 #### Before you start the project you have to install the database dialect based on your preference:
