@@ -34,3 +34,7 @@
 
 
 ###### This project is not ready for production is just a good starting point to approach sequelize and koa
+
+
+## Author
+[Davide Polano](https://www.mdslab.org)
