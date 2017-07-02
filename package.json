@@ -1,0 +1,33 @@
+{
+  "name": "koa-sequelize",
+  "version": "1.0.0",
+  "description": "Koa basic server boilerplate example",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sudo pm2 start ./config/app.json --only koaSequelize-development --env development",
+    "prod": "pm2 start ./config/app.json --only koaSequelize-production --env production",
+    "doc": "jsdoc -c ./config/jsdoc.json"
+  },
+  "keywords": [
+    "koa2",
+    "async",
+    "await",
+    "sequelize"
+  ],
+  "author": "MDSLab",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-node": "^0.1.0",
+    "http2": "^3.3.6",
+    "jws": "^3.1.4",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "sequelize": "^4.2.1",
+    "sequelize-cli": "^2.7.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.4.3",
+    "jsdoc-strip-async-await": "^0.1.0"
+  }
+}
