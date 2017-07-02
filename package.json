@@ -15,7 +15,7 @@
     "sequelize"
   ],
   "author": "MDSLab",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bcrypt-node": "^0.1.0",
     "http2": "^3.3.6",
