@@ -1,4 +1,4 @@
-#### Node.JS (7.7.1) - KoaJS (2.3) - Sequelize 4.2
+#### Node.JS (7.7.1) - KoaJS (2.3) - Sequelize 3.3
 
 #### Before you start the project you have to install the database dialect based on your preference:
 
