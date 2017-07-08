@@ -35,8 +35,5 @@
 
 ###### This project is not ready for production is just a good starting point to approach sequelize and koa
 
-## License
-open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
 ## Author
 [Davide Polano](https://www.mdslab.org)
