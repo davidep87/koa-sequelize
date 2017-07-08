@@ -23,7 +23,7 @@
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-router": "^7.2.1",
-    "sequelize": "^4.2.1",
+    "sequelize": "^3.30.4",
     "sequelize-cli": "^2.7.0"
   },
   "devDependencies": {
