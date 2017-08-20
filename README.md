@@ -30,7 +30,7 @@
 
 ##### NOTE: database models are attached on the koa context so you are able to use it easily around the project like:
 
-`cont users = await ctx.db.models.User.findAll().then((result) => result)`
+`cont users = await ctx.db.models.User.findAll()`
 
 
 ###### This project is not ready for production is just a good starting point to approach sequelize and koa
