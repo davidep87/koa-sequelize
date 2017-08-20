@@ -39,6 +39,21 @@ const config = {
       "X-Frame-Options": "SAMEORIGIN" ,
       "X-Powered-By": "MDSLab"
     },
+  },
+  auth:{
+    firebase: {
+  		serverToken : '',
+  	},
+    social: {
+      facebook: {
+        clientID: '',
+        clientSecret: ''
+      },
+      google: {
+        clientID: '',
+        clientSecret: ''
+      },
+    }
   }
 }
 
