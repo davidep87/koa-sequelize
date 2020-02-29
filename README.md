@@ -18,7 +18,19 @@
 
 `$ yarn add tedious // MSSQL`
 
-- ###### Then configure the file database.json in the config directory
+- ###### Then configure the file database.js in the config directory
+
+- ###### Create e .env file with this variables:
+  - LOCAL_HOST
+  - PRODUCTION_HOST
+  - STAGING_HOST
+  - SECRET_KEY
+  - PORT
+  - DB_USER
+  - DB_PASSWORD
+  - DATABASE
+  - DB_HOST
+
 - ###### In models you can find a ready to use example of Users model
 
 ##### How to modify database structure without forcing sync of sequelize:

@@ -1,13 +1,27 @@
-const http2 = require('http2')
+require('dotenv').config()
 const koa = require('koa')
 const api = require('./api/index')
-const config = require('./config/index')
+const pino = require('koa-pino-logger')
 const app = new koa()
 
-app.context.db = require('./config/database')
+let hostname = process.env.LOCAL_HOST
 
+switch (process.env.NODE_ENV) {
+  case 'production':
+    hostname = process.env.PRODUCTION_HOST
+    break;
+  case 'staging':
+    hostname = process.env.STAGING_HOST
+    break;
+}
+
+app.context.errors = require('./config/errors')
+app.context.db = require('./models/_index')
+
+process.env.TZ = 'Europe/Rome'
+
+app.use(pino({ level: 'info' }))
 app.use(api.routes())
+app.listen(process.env.PORT)
 
-config.ssl.active? http2.createServer(config.ssl, app.callback()).listen(config.server.port) : app.listen(config.server.port)
-
-console.log(`[Koa2-Js] API is running on ${config.server.hostname} port: ${config.server.port}`)
+console.log(`[Koa-Sequelize] API is running on ${hostname} port: ${process.env.PORT}`)
